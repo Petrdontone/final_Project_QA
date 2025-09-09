@@ -43,7 +43,7 @@ jobs:
           echo test, and deploy your project.
 
       - name: Do sh script
-        run: sh bash_script/test.sh
+        run: sh folder/test.sh
 
 
 
