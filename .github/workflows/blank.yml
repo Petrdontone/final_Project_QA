@@ -1,6 +1,6 @@
 
 
-name: CI
+name: Final CI
 
 
 on:
@@ -11,7 +11,7 @@ on:
 
 
 jobs:
-  build:
+  test_job:
     runs-on: ubuntu-latest
 
     steps:
@@ -24,6 +24,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Do ls command
+        run: ls -la
   
   start_script_sh:
     runs-on: ubuntu-latest
@@ -38,3 +41,10 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+
+      - name: Do sh script
+        run: sh bash_script/test.sh
+
+
+
+
